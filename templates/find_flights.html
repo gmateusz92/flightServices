@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Find Flights</title>
+</head>
+<body>
+    <form method="post">
+        {% csrf_token %}
+        <label for="departureCity">Departure City:</label>
+        <input type="text" name="departureCity"><br>
+        <label for="arrivalCity">Arrival City:</label>
+        <input type="text" name="arrivalCity"><br>
+        <label for="dateOfDeparture">Date of Departure:</label>
+        <input type="date" name="dateOfDeparture"><br>
+        <button type="submit">Search Flights</button>
+    </form>
+</body>
+</html>

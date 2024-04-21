@@ -1,0 +1,21 @@
+<!-- templates/save_reservation.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Save Reservation</title>
+</head>
+<body>
+    <h1>Save Reservation</h1>
+    <form method="post">
+        {% csrf_token %}
+        Flight ID: <input type="text" name="flightId"><br>
+        First Name: <input type="text" name="firstName"><br>
+        Last Name: <input type="text" name="lastName"><br>
+        Middle Name: <input type="text" name="middleName"><br>
+        Email: <input type="email" name="email"><br>
+        Phone: <input type="text" name="phone"><br>
+        <button type="submit">Save Reservation</button>
+    </form>
+</body>
+</html>
+
